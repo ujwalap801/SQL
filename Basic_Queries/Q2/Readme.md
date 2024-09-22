@@ -125,3 +125,63 @@ Department	NumberOfEmployees
 HR             	2
 IT           	2
 Sales	        2
+
+
+## SQL `ORDER BY` Clause
+
+The `ORDER BY` clause in SQL is used to sort the result set of a query by one or more columns. By default, the `ORDER BY` clause sorts the records in ascending order. To sort in descending order, the `DESC` keyword is used.
+
+### Syntax
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
+
+
+## SQL `NULL` Value
+
+In SQL, `NULL` represents the absence of a value. It is used to indicate that data is missing or unknown. `NULL` is not the same as an empty string (`''`) or zero (`0`), and it must be handled carefully when working with queries.
+
+### Key Points
+
+- `NULL` is not equal to anything, not even to another `NULL`. To check for `NULL` values, the `IS NULL` or `IS NOT NULL` operators are used instead of the `=` operator.
+- Any arithmetic operation with `NULL` results in `NULL`. For example, `5 + NULL` will result in `NULL`.
+
+### Syntax
+
+To check for `NULL` values in a query:
+
+```sql
+SELECT column1, column2
+FROM table_name
+WHERE column1 IS NULL;
+
+## To exclude NULL values:
+
+SELECT column1, column2
+FROM table_name
+WHERE column1 IS NOT NULL;
+
+
+## SQL `UPDATE` Command
+
+The `UPDATE` command in SQL is used to modify existing records in a table. You can update one or more columns for one or multiple rows based on a specified condition. Be cautious when using the `UPDATE` command without a `WHERE` clause, as it will modify all records in the table.
+
+### Syntax
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+
+## SQL `DELETE` Command
+
+The `DELETE` command in SQL is used to remove records from a table. You can delete specific rows based on a condition or remove all rows from the table. Be careful when using `DELETE` without a `WHERE` clause, as it will delete all records in the table.
+
+### Syntax
+
+```sql
+DELETE FROM table_name
+WHERE condition;
