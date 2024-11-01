@@ -10,8 +10,6 @@
 Data plays a crucial role in various fields, such as business, science, and technology, enabling informed decision-making, analysis, and automation.
 
 
-
-
 # What is a Database?
 
 A **database** is an organized collection of data that is stored and managed electronically, typically on a computer system. Databases are designed to efficiently store, retrieve, and manage large amounts of data. They allow users to perform various operations like adding, modifying, deleting, and querying data.
@@ -62,6 +60,10 @@ In a table listing students, each row might represent a different student, while
 # Table Constraints
 
 A table constraint is a rule applied to a table in a database to enforce certain conditions on the data within that table. Constraints help maintain data integrity and ensure the accuracy and reliability of the data. Here are the main types of table constraints:
+A table is a collection of related data held in a table format within a database
+
+## To check your table
+DESC table_name
 
 ## Types of Table Constraints
 
@@ -106,3 +108,10 @@ primary key(id)
 );
 
 DROP TABLE emp;
+
+
+A Relational Database is a type of database that organizes data into tables, also called relations, which consist of rows and columns. Each table in a relational database stores information about a specific type of entity, with rows representing individual records and columns representing attributes of those records. 
+
+
+
+Examples of databases include employee databases, e-commerce databases, and library databases, while examples of Database Management Systems (DBMS) are MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, and MongoDB.,

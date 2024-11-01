@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS ofc;
+USE ofc;
+
+CREATE TABLE num2(
+f float, d double);
+
+INSERT INTO num2 values(123.123455679,125.453344546466);
+SELECT * FROM num2;

@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS ofc;
+USE ofc;
+
+
+CREATE TABLE person(
+jd Date,
+jt TIME,
+jdt DATETIME);
+
+
+INSERT INTO person VALUES ('2022-04-17', '23:00:00', '2023-05-16 22:23:09');
+
+SELECT *FROM person;
